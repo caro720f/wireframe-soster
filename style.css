@@ -1,5 +1,4 @@
 .container {
-  width: 1320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,4 +62,11 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+}
+/*iPad*/
+@media (min-width: 700px) {
 }
