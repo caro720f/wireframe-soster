@@ -1,3 +1,24 @@
+:root {
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.splash {
+  background-image: url(img/IMG_2819.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Prosto One";
+  font-size: 50px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -5,9 +26,9 @@
 
 .nav-link {
   font-family: poppins medium;
-  color: #40000d;
+  color: white;
 }
-.nav-link:focus,
+
 .nav-link:hover {
   color: #d1c5fa;
 }
@@ -20,6 +41,11 @@
   margin-bottom: 1.5rem;
 }
 
+.nav-tekst a {
+  float: right;
+  font-size: 12px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -28,9 +54,30 @@
 body {
   margin: 20px;
 }
+#sectionEt h2 {
+  font-size: 18px;
+}
+.rightBox {
+  margin-top: -80px;
+}
+
+.rightBox h3 {
+  font-size: 18px;
+  margin-top: 35px;
+  padding-bottom: 17px;
+}
+
+.rightBox h5 {
+  font-size: 15px;
+}
+
+.rightBox p {
+  font-size: 15px;
+}
+
 #bannerAnimation {
-  border-top: solid purple 2px;
-  border-bottom: solid purple 2px;
+  border-top: solid #40000d 2px;
+  border-bottom: solid #40000d 2px;
   margin-bottom: 22px;
 }
 .marquee {
@@ -41,20 +88,70 @@ body {
   position: relative;
 }
 
+.marquee span {
+  background: #40000d;
+}
+
 .marquee div {
   width: 500%;
   height: 100px;
   position: absolute;
   overflow: hidden;
-  animation: marquee 80s linear infinite;
+  animation: marquee 100s linear infinite;
 }
 
 .marquee span {
   float: left;
   width: 50%;
-  color: palevioletred;
+  color: #f1e6ee;
 }
 
+.produktbeskrivelse {
+  font-size: 14px;
+  margin-top: -16px;
+  margin-bottom: 32px;
+}
+button {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: normalidad;
+  color: #40000d;
+  background-color: #d1c5fa;
+  border: none;
+}
+
+button:hover {
+  color: #d1c5fa;
+  background-color: #40000d;
+  border: none;
+}
+
+.produktbillede {
+  padding-top: 40px;
+}
+.sectionFire p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.sectionFire h5 {
+  font-size: 15px;
+}
+
+.sectionFem {
+  margin-top: 0px;
+}
+
+.sectionFemTekst {
+  padding-top: 20px;
+}
+
+.sectionFemTekst p {
+  text-align: center;
+}
 @keyframes marquee {
   100% {
     transform: translateX(-100%);
@@ -66,7 +163,76 @@ body {
 
 /*Desktop*/
 @media (min-width: 992px) {
+  .nav-tekst a {
+    float: right;
+    font-size: 15px;
+  }
+
+  #sectionEt {
+    margin-top: 100px;
+  }
+
+  #sectionEt h2 {
+    font-size: 26px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 0px;
+  }
+  .leftBox {
+    margin-left: 50px;
+  }
+  .rightBox {
+    margin-top: 160px;
+    margin-bottom: 220px;
+    margin-left: -85px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .rightBox h3 {
+    margin-top: 60px;
+    padding-bottom: 15px;
+    font-size: 26px;
+  }
+  #sectionTo p {
+    font-family: poppins;
+  }
+  button {
+    margin-left: 240px;
+    margin-right: 240px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .produktbeskrivelse {
+    font-size: 18px;
+    margin-top: -16px;
+    margin-bottom: 32px;
+  }
+
+  .sectionFem {
+    margin-top: -64px;
+  }
+
+  .sectionFemTekst {
+    margin-top: 285px;
+  }
+
+  .taskeTekst {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 /*iPad*/
 @media (min-width: 700px) {
+  .nav-tekst a {
+    float: right;
+    font-size: 15px;
+  }
+  button {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
 }
