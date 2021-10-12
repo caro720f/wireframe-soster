@@ -7,7 +7,8 @@ html {
 }
 
 .splash {
-  background-image: url(img/IMG_2819.jpg);
+  background-image: url(img/IMG_2820.gif);
+  max-width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,6 +55,10 @@ h1 {
 body {
   margin: 20px;
 }
+
+#sectionEt p {
+  margin-top: 70px;
+}
 #sectionEt h2 {
   font-size: 18px;
 }
@@ -79,6 +84,8 @@ body {
   border-top: solid #40000d 2px;
   border-bottom: solid #40000d 2px;
   margin-bottom: 22px;
+  margin-top: 40px;
+  background: #40000d;
 }
 .marquee {
   height: 25px;
@@ -98,6 +105,7 @@ body {
   position: absolute;
   overflow: hidden;
   animation: marquee 100s linear infinite;
+  animation-delay: 5s;
 }
 
 .marquee span {
@@ -117,6 +125,7 @@ button {
   margin-top: 15px;
   padding-top: 7px;
   padding-bottom: 7px;
+  margin-bottom: 30px;
   font-family: normalidad;
   color: #40000d;
   background-color: #d1c5fa;
@@ -132,26 +141,71 @@ button:hover {
 .produktbillede {
   padding-top: 40px;
 }
-.sectionFire p {
+#sectionFire p {
   font-size: 15px;
   text-align: center;
+  margin-bottom: 80px;
 }
 
-.sectionFire h5 {
+#sectionFire h5 {
   font-size: 15px;
 }
 
-.sectionFem {
+#sectionFem {
   margin-top: 0px;
 }
 
-.sectionFemTekst {
+#sectionFemTekst {
   padding-top: 20px;
 }
 
-.sectionFemTekst p {
+#sectionFemTekst p {
   text-align: center;
 }
+
+.instaBillede img {
+  margin-left: 34px;
+  max-width: 80%;
+  height: auto;
+}
+
+.instaTekst h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.instaTekst p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-left: 20px;
+}
+.instaTekst {
+  margin-top: -75px;
+}
+/*insta ikon*/
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: #d1c5fa;
+}
+
+.fa-instagram {
+  background: #f1e6ee;
+  color: #40000d;
+  margin-left: 140px;
+}
+
 @keyframes marquee {
   100% {
     transform: translateX(-100%);
@@ -161,6 +215,8 @@ button:hover {
   }
 }
 
+/*Footer*/
+
 /*Desktop*/
 @media (min-width: 992px) {
   .nav-tekst a {
@@ -168,35 +224,44 @@ button:hover {
     font-size: 15px;
   }
 
-  #sectionEt {
-    margin-top: 100px;
+  .splash {
+    height: 95%;
+  }
+
+  #sectionEt p {
+    margin-top: 130px;
   }
 
   #sectionEt h2 {
     font-size: 26px;
     margin-left: 250px;
     margin-right: 250px;
-    padding-top: 0px;
+    padding-bottom: 130px;
   }
   .leftBox {
     margin-left: 50px;
   }
   .rightBox {
-    margin-top: 160px;
-    margin-bottom: 220px;
+    margin-top: 100px;
+    margin-bottom: 170px;
     margin-left: -85px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
   .rightBox h3 {
     margin-top: 60px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     font-size: 26px;
+  }
+
+  .rightBox h5 {
+    font-size: 19px;
   }
   #sectionTo p {
     font-family: poppins;
   }
+
   button {
     margin-left: 240px;
     margin-right: 240px;
@@ -210,8 +275,13 @@ button:hover {
     margin-bottom: 32px;
   }
 
-  .sectionFem {
+  #sectionFem {
     margin-top: -64px;
+  }
+
+  #sectionFem img {
+    margin-top: 0px;
+    margin-right: -12px;
   }
 
   .sectionFemTekst {
@@ -221,6 +291,29 @@ button:hover {
   .taskeTekst {
     padding-left: 100px;
     padding-right: 100px;
+    text-align: center;
+  }
+
+  .instaBillede img {
+    margin-left: 260px;
+    margin-top: 60px;
+    max-width: 60%;
+    height: auto;
+  }
+
+  .instaTekst {
+    max-width: 30%;
+    height: 25%;
+    margin-top: 155px;
+    margin-left: -35px;
+  }
+
+  .fa-instagram {
+    margin-left: 170px;
+  }
+
+  #sectionSeks {
+    margin-top: -10px;
   }
 }
 /*iPad*/
